@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function Home() {
   let name = "seongukHeo";
-  let ade = 25;
 
   return (
     <div>

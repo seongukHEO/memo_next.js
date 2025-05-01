@@ -1,16 +1,19 @@
 export default function List() {
+  let product = ["tomatoes", "pasta", "coconut"];
+  let b = [40, 50, 70];
+  let 어레이 = [2, 3, 4];
   return (
     <div>
       <h4 className="title">상품목록</h4>
-      <div className="food">
-        <h4>상품1 $40</h4>
-      </div>
-      <div className="food">
-        <h4>상품2 $50</h4>
-      </div>
-      <div className="food">
-        <h4>상품3 $70</h4>
-      </div>
+      {product.map((a, i) => {
+        return (
+          <div className="food">
+            <h4>
+              {product[i]} ${b[i]}
+            </h4>
+          </div>
+        );
+      })}
     </div>
   );
 }
