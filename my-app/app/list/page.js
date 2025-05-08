@@ -7,7 +7,8 @@ export default function List() {
       <h4 className="title">상품목록</h4>
       {product.map((a, i) => {
         return (
-          <div className="food">
+          <div className="food" key={i}>
+            <img src={"/00" + i + ".png"} className="food_img"></img>
             <h4>
               {product[i]} ${b[i]}
             </h4>
